@@ -13,6 +13,8 @@ export function Header() {
         ) : (
           <Button onClick={() => signIn("google")}>Sign In</Button>
         )}
+
+        {session.data?.user?.name}
         <ModeToggle />
       </div>
     </header>

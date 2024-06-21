@@ -81,3 +81,4 @@ export const room = pgTable("room", {
 });
 
 export type Room = typeof room.$inferSelect;
+// allows frontend code to use without redefine types
